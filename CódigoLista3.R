@@ -65,7 +65,7 @@ modelo_resp_AR1 <- lme(
 summary(modelo_resp_AR1)
 
 
-# Modelo resp com matriz diagonal:
+# Modelo pulse com matriz diagonal:
 modelo_resp_diagonal <- lme(
   fixed = pulse ~ tempo + drug + tempo*drug,
   data = banco3, 
@@ -75,7 +75,7 @@ modelo_resp_diagonal <- lme(
 summary(modelo_resp_diagonal)
 
 
-# Modelo resp com matriz não-estruturada:
+# Modelo pulse com matriz não-estruturada:
 modelo_resp_nope <- lme(
   fixed = pulse ~ tempo + drug + tempo*drug,
   data = banco3, 
